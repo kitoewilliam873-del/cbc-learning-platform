@@ -2,10 +2,9 @@ services:
   - type: web
     name: cbc-learning-backend
     env: node
-    rootDir: backend
     plan: free
-    buildCommand: npm install
-    startCommand: npm run dev
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm run dev
     envVars:
       - key: NODE_VERSION
         value: 20
@@ -17,10 +16,9 @@ services:
   - type: web
     name: cbc-learning-frontend
     env: node
-    rootDir: frontend
     plan: free
-    buildCommand: npm install && npm run build
-    startCommand: npm run start
+    buildCommand: cd frontend && npm install && npm run build
+    startCommand: cd frontend && npm run start
     envVars:
       - key: NODE_VERSION
         value: 20
@@ -29,3 +27,4 @@ services:
       - key: PORT
         value: 10000
         
+  
