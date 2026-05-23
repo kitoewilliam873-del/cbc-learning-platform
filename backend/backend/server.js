@@ -16,3 +16,14 @@ const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
     console.log(`Server is actively running on port ${PORT}`);
 });
+
+// Add this route handler right before app.listen
+app.get('/', (req, res) => {
+    res.send('<h1>CBC Backend is officially live and running!</h1>');
+});
+
+// Your existing port listener below it
+const PORT = process.env.PORT || 10000;
+app.listen(PORT, () => {
+    console.log(`Server is actively running on port ${PORT}`);
+});
