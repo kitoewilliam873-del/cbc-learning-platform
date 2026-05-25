@@ -14,17 +14,14 @@ services:
       - key: PORT
         value: 10000
 
-  - type: web
-    name: cbc-learning-frontend
-    env: node
-    rootDir: frontend
-    plan: free
-    buildCommand: npm install && npm run build
-    startCommand: npm run start
-    envVars:
-      - key: NODE_VERSION
-        value: 20
-      - key: NEXT_PUBLIC_API_URL
-        sync: false
-      - key: PORT
-        value: 10000
+services:
+  # Your backend service configuration would be here...
+
+type: static
+name: cbc-learning-platform-frontend
+repo: https://github.com/kitowilliam873-del/cbc-learning-platform
+env: static
+# If your HTML files are inside a 'frontend' folder:
+rootContext: frontend 
+publishPath: ./
+
