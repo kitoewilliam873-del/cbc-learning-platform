@@ -14,14 +14,9 @@ services:
       - key: PORT
         value: 10000
 
-services:
-  # Your backend service configuration would be here...
-
-type: static
-name: cbc-learning-platform-frontend
-repo: https://github.com/kitowilliam873-del/cbc-learning-platform
-env: static
-# If your HTML files are inside a 'frontend' folder:
-rootContext: frontend 
-publishPath: ./
-
+  - type: static
+    name: cbc-client-ui
+    repo: https://github.com/kitowilliam873-del/cbc-learning-platform
+    rootContext: frontend
+    publishPath: .
+    
