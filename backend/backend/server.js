@@ -16,6 +16,11 @@ app.get('/', (req, res) => {
     res.send('<h1>CBC Backend is officially live and running</h1>');
 });
 
+// ADD THIS NEW BLOCK RIGHT HERE:
+app.get('/api/assessment', (req, res) => {
+    res.json({ message: "Gas Laws Assessment Engine is Ready!" });
+});
+
 // Single Port listener at the very bottom
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
