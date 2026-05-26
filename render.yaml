@@ -18,5 +18,6 @@ services:
     name: cbc-client-ui
     repo: https://github.com/kitowilliam873-del/cbc-learning-platform
     rootContext: frontend
-    publishPath: .
+    publishPath: app
+    
     
