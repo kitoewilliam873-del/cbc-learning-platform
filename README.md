@@ -1,10 +1,3 @@
-diff --git a/README.md b/README.md
-index 82b5b5cefaeaa28b2df782a341bf62d82e9d07e7..b0f19e4352dec27d3e620bb302d7112cbff045cd 100644
---- a/README.md
-+++ b/README.md
-@@ -1 +1,72 @@
--# cbc-learning-platform
-\ No newline at end of file
 +# CBC Learning Platform (Grades 10–12)
 +
 +Starter scaffold for an online CBC curriculum platform supporting:
